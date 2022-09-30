@@ -15,6 +15,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3f;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Overwrite;
 
 @Mixin(FireworkRocketEntityRenderer.class)
 public class FireworkRocketEntityRendererMixin extends EntityRenderer<FireworkRocketEntity> {
@@ -26,7 +27,11 @@ public class FireworkRocketEntityRendererMixin extends EntityRenderer<FireworkRo
     private static final Identifier TEXTURE = new Identifier("bydesign", "textures/entity/projectiles/firework_rocket.png");
     private final FireworkRocketEntityModel model = new FireworkRocketEntityModel(MinecraftClient.getInstance().getEntityModelLoader().getModelPart(ByDesignClient.FIREWORK_ROCKET_MODEL_LAYER));
 
-    @Override
+    /**
+     * @author Kly
+     * @reason Changed how fireworks render
+     */
+    @Overwrite
     public void render(FireworkRocketEntity entity, float yaw, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumerProvider, int light) {
         matrices.push();
 
@@ -39,7 +44,7 @@ public class FireworkRocketEntityRendererMixin extends EntityRenderer<FireworkRo
 
         matrices.translate(0.0, -1.5, 0.0);
 
-        VertexConsumer vertexConsumer = vertexConsumerProvider.getBuffer(this.model.getLayer(this.getTexture(entity)));
+        VertexConsumer vertexConsumer = vertexConsumerProvider.getBuffer(this.model.getLayer(getTexture(entity)));
         this.model.render(matrices, vertexConsumer, light, OverlayTexture.DEFAULT_UV, 1.0F, 1.0F, 1.0F, 1.0F);
 
         matrices.pop();
@@ -47,7 +52,11 @@ public class FireworkRocketEntityRendererMixin extends EntityRenderer<FireworkRo
     }
 
 
-    @Override
+    /**
+     * @author Kly
+     * @reason Switched texture
+     */
+    @Overwrite
     public Identifier getTexture(FireworkRocketEntity entity) {
         return TEXTURE;
     }

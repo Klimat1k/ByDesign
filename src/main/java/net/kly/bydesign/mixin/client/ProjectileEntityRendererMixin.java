@@ -31,8 +31,8 @@ public abstract class ProjectileEntityRendererMixin<T extends PersistentProjecti
     private final ArrowEntityModel model = new ArrowEntityModel(MinecraftClient.getInstance().getEntityModelLoader().getModelPart(ByDesignClient.ARROW_MODEL_LAYER));
 
     /**
-     * @author
-     * @reason
+     * @author Kly
+     * @reason Changed how arrows render
      */
     @Overwrite
     public void render(T entity, float yaw, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumerProvider, int light) {
