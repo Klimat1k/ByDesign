@@ -10,7 +10,7 @@ public class ArrowEntityModel extends Model {
     private final ModelPart root;
 
     public ArrowEntityModel(ModelPart root) {
-        super(RenderLayer::getEntityCutoutNoCullZOffset);
+        super(RenderLayer::getEntitySolid);
         this.root = root;
     }
 

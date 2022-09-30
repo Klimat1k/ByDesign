@@ -10,7 +10,7 @@ public class FireworkRocketEntityModel extends Model {
     private final ModelPart root;
 
     public FireworkRocketEntityModel(ModelPart root) {
-        super(RenderLayer::getEntityCutout);
+        super(RenderLayer::getEntitySolid);
         this.root = root;
     }
 
