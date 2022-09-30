@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "bydesign",
+  "version": "${version}",
+
+  "name": "By Design",
+  "description": "",
+  "authors": [
+    "Kly"
+  ],
+  "contact": {
+    "sources": "https://github.com/Klimat1k/ByDesign"
+  },
+
+  "license": "All Rights Reserved",
+  "icon": "assets/bydesign/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.kly.bydesign.ByDesign"
+    ],
+    "client": [
+      "net.kly.bydesign.ByDesignClient"
+    ]
+  },
+  "mixins": [
+    "bydesign.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
