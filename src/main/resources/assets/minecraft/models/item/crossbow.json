@@ -27,6 +27,21 @@
 			"rotation": [ -90, 0, 35 ],
 			"translation": [ 1.13, 3.2, 1.13],
 			"scale": [ 0.68, 0.68, 0.68 ]
+		},
+
+		"ground": {
+			"rotation": [ 0, 0, 0 ],
+			"translation": [ 0, 2, 0],
+			"scale":[ 0.5, 0.5, 0.5 ]
+		},
+		"head": {
+			"rotation": [ 0, 180, 0 ],
+			"translation": [ 0, 13, 7],
+			"scale":[ 1, 1, 1]
+		},
+		"fixed": {
+			"rotation": [ 0, 180, 0 ],
+			"scale": [ 1, 1, 1 ]
 		}
 	},
 
@@ -439,9 +454,37 @@
 			}
 		},
 		{
+			"name": "crossbow_base_0",
+			"from": [3, 13, 7.5],
+			"to": [5, 14, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
+			"faces": {
+				"north": {"uv": [3, 3, 5, 2], "rotation": 180, "texture": "#base"},
+				"east": {"uv": [4, 2, 5, 3], "texture": "#base"},
+				"south": {"uv": [3, 2, 5, 3], "texture": "#base"},
+				"west": {"uv": [3, 2, 4, 3], "texture": "#base"},
+				"up": {"uv": [5, 2, 3, 3], "rotation": 180, "texture": "#base"},
+				"down": {"uv": [3, 2, 5, 3], "texture": "#base"}
+			}
+		},
+		{
 			"name": "crossbow_base_1",
 			"from": [2, 11, 7],
 			"to": [3, 13, 7.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
+			"faces": {
+				"north": {"uv": [2, 5, 3, 3], "rotation": 180, "texture": "#base"},
+				"east": {"uv": [2, 3, 3, 5], "texture": "#base"},
+				"south": {"uv": [2, 3, 3, 5], "texture": "#base"},
+				"west": {"uv": [2, 3, 3, 5], "texture": "#base"},
+				"up": {"uv": [3, 3, 2, 4], "rotation": 180, "texture": "#base"},
+				"down": {"uv": [2, 4, 3, 5], "texture": "#base"}
+			}
+		},
+		{
+			"name": "crossbow_base_1",
+			"from": [2, 11, 7.5],
+			"to": [3, 13, 8],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
 			"faces": {
 				"north": {"uv": [2, 5, 3, 3], "rotation": 180, "texture": "#base"},
@@ -635,6 +678,7 @@
 			}
 		}
 	],
+
 	"groups": [
 		{
 			"name": "crossbow_standby",
@@ -646,7 +690,7 @@
 			"name": "crossbow_base",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"children": [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
+			"children": [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41]
 		}
 	]
 }
