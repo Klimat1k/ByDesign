@@ -6,8 +6,10 @@
   "mixins": [
   ],
   "client": [
+    "client.ArrowEntityRendererMixin",
     "client.FireworkRocketEntityRendererMixin",
-    "client.ProjectileEntityRendererMixin"
+    "client.ProjectileEntityRendererMixin",
+    "client.SpectralArrowEntityRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1
