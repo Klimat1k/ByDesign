@@ -51,7 +51,7 @@ public class ArrowEntityRendererMixin extends ProjectileEntityRenderer<ArrowEnti
 
     /**
      * @author Kly
-     * @reason Switched texture for new 3d model
+     * @reason Switched texture
      */
     @Overwrite
     public Identifier getTexture(ArrowEntity entity) {

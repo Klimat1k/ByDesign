@@ -6,12 +6,10 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.VertexConsumerProvider;
-import net.minecraft.client.render.entity.ArrowEntityRenderer;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.ProjectileEntityRenderer;
 import net.minecraft.client.render.entity.SpectralArrowEntityRenderer;
 import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.projectile.SpectralArrowEntity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
@@ -29,7 +27,6 @@ public class SpectralArrowEntityRendererMixin extends ProjectileEntityRenderer<S
         super(context);
     }
 
-    @Override
     public void render(SpectralArrowEntity entity, float yaw, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumerProvider, int light) {
         matrices.push();
 
@@ -53,7 +50,7 @@ public class SpectralArrowEntityRendererMixin extends ProjectileEntityRenderer<S
 
     /**
      * @author Kly
-     * @reason Switched texture for new 3d model
+     * @reason Switched texture
      */
     @Overwrite
     public Identifier getTexture(SpectralArrowEntity entity) {

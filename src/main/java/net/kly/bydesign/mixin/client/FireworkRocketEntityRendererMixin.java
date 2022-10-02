@@ -51,7 +51,11 @@ public class FireworkRocketEntityRendererMixin extends EntityRenderer<FireworkRo
         super.render(entity, yaw, tickDelta, matrices, vertexConsumerProvider, light);
     }
 
-    @Override
+    /**
+     * @author Kly
+     * @reason Switched texture
+     */
+    @Overwrite
     public Identifier getTexture(FireworkRocketEntity entity) {
         return TEXTURE;
     }
