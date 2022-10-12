@@ -10,6 +10,8 @@ import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.minecraft.item.CrossbowItem;
 import net.minecraft.item.Items;
+import net.minecraft.item.TippedArrowItem;
+import net.minecraft.potion.PotionUtil;
 import net.minecraft.util.Identifier;
 
 @Environment(value= EnvType.CLIENT)
@@ -22,6 +24,8 @@ public class ByDesignClient implements ClientModInitializer {
     public void onInitializeClient() {
         EntityModelLayerRegistry.registerModelLayer(FIREWORK_ROCKET_MODEL_LAYER, FireworkRocketEntityModel::getTexturedModelData);
         EntityModelLayerRegistry.registerModelLayer(ARROW_MODEL_LAYER, ArrowEntityModel::getTexturedModelData);
+
+        ModelPredicateProviderRegistry.register(Items.ARROW, new Identifier("quiver"), (stack, world, entity, seed) -> stack.getCount() >= 16 ? 1.0F : 0.0F);
 
         ModelPredicateProviderRegistry.register(Items.BOW, new Identifier("spectral_arrow"), (stack, world, entity, seed) -> entity != null && entity.getArrowType(stack).isOf(Items.SPECTRAL_ARROW) ? 1.0F : 0.0F);
         ModelPredicateProviderRegistry.register(Items.CROSSBOW, new Identifier("spectral_arrow"), (stack, world, entity, seed) -> entity != null && CrossbowItem.isCharged(stack) && CrossbowItem.hasProjectile(stack, Items.SPECTRAL_ARROW) ? 1.0F : 0.0F);

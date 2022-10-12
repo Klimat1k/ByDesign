@@ -1,50 +1,11 @@
 {
 	"credit": "Made with Blockbench",
+	"parent": "item/display/crossbow",
 	"textures": {
-		"particle": "bydesign:component/crossbow_standby",
-		"crossbow": "bydesign:component/crossbow_standby",
-		"base": "bydesign:component/crossbow_base"
+		"particle": "bydesign:item/crossbow_standby",
+		"crossbow": "bydesign:item/crossbow_standby",
+		"base": "bydesign:item/crossbow_base"
 	},
-
-	"gui_light": "front",
-	"display": {
-		"thirdperson_righthand": {
-			"rotation": [ -90, 0, -60 ],
-			"translation": [ 2, 0.1, -3 ],
-			"scale": [ 0.9, 0.9, 0.9 ]
-		},
-		"thirdperson_lefthand": {
-			"rotation": [ -90, 0, 30 ],
-			"translation": [ 2, 0.1, -3 ],
-			"scale": [ 0.9, 0.9, 0.9 ]
-		},
-		"firstperson_righthand": {
-			"rotation": [ -90, 0, -55 ],
-			"translation": [ 1.13, 3.2, 1.13],
-			"scale": [ 0.68, 0.68, 0.68 ]
-		},
-		"firstperson_lefthand": {
-			"rotation": [ -90, 0, 35 ],
-			"translation": [ 1.13, 3.2, 1.13],
-			"scale": [ 0.68, 0.68, 0.68 ]
-		},
-
-		"ground": {
-			"rotation": [ 0, 0, 0 ],
-			"translation": [ 0, 2, 0],
-			"scale":[ 0.5, 0.5, 0.5 ]
-		},
-		"head": {
-			"rotation": [ 0, 180, 0 ],
-			"translation": [ 0, 13, 7],
-			"scale":[ 1, 1, 1]
-		},
-		"fixed": {
-			"rotation": [ 0, 180, 0 ],
-			"scale": [ 1, 1, 1 ]
-		}
-	},
-
 	"overrides": [
 		{
 			"predicate": {
@@ -87,125 +48,89 @@
 			"model": "item/crossbow_spectral_arrow"
 		}
 	],
-
 	"elements": [
 		{
 			"name": "crossbow_standby_0",
-			"from": [12, 12, 7.5],
+			"from": [12, 15, 7.5],
 			"to": [13, 16, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
 			"faces": {
-				"north": {"uv": [12, 4, 13, 0], "rotation": 180, "texture": "#crossbow"},
-				"east": {"uv": [12, 0, 13, 4], "texture": "#crossbow"},
-				"south": {"uv": [12, 0, 13, 4], "texture": "#crossbow"},
-				"west": {"uv": [12, 0, 13, 4], "texture": "#crossbow"},
+				"north": {"uv": [12, 1, 13, 0], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [12, 0, 13, 1], "texture": "#crossbow"},
+				"south": {"uv": [12, 0, 13, 1], "texture": "#crossbow"},
+				"west": {"uv": [12, 0, 13, 1], "texture": "#crossbow"},
 				"up": {"uv": [13, 0, 12, 1], "rotation": 180, "texture": "#crossbow"},
-				"down": {"uv": [12, 3, 13, 4], "texture": "#crossbow"}
+				"down": {"uv": [12, 0, 13, 1], "texture": "#crossbow"}
 			}
 		},
 		{
 			"name": "crossbow_standby_1",
-			"from": [7, 12, 7.5],
-			"to": [11, 15, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
+			"from": [7, 14, 7.5],
+			"to": [14, 15, 8.5],
 			"faces": {
-				"north": {"uv": [7, 4, 11, 1], "rotation": 180, "texture": "#crossbow"},
-				"east": {"uv": [10, 1, 11, 4], "texture": "#crossbow"},
-				"south": {"uv": [7, 1, 11, 4], "texture": "#crossbow"},
-				"west": {"uv": [7, 1, 8, 4], "texture": "#crossbow"},
-				"up": {"uv": [11, 1, 7, 2], "rotation": 180, "texture": "#crossbow"},
-				"down": {"uv": [7, 3, 11, 4], "texture": "#crossbow"}
+				"north": {"uv": [7, 2, 14, 1], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [13, 1, 14, 2], "texture": "#crossbow"},
+				"south": {"uv": [7, 1, 14, 2], "texture": "#crossbow"},
+				"west": {"uv": [7, 1, 8, 2], "texture": "#crossbow"},
+				"up": {"uv": [14, 1, 7, 2], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [7, 1, 14, 2], "texture": "#crossbow"}
 			}
 		},
 		{
 			"name": "crossbow_standby_2",
-			"from": [11, 13, 7.5],
-			"to": [12, 15, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
+			"from": [6, 13, 7.5],
+			"to": [14, 14, 8.5],
 			"faces": {
-				"north": {"uv": [11, 3, 12, 1], "rotation": 180, "texture": "#crossbow"},
-				"east": {"uv": [11, 1, 12, 3], "texture": "#crossbow"},
-				"south": {"uv": [11, 1, 12, 3], "texture": "#crossbow"},
-				"west": {"uv": [11, 1, 12, 3], "texture": "#crossbow"},
-				"up": {"uv": [12, 1, 11, 2], "rotation": 180, "texture": "#crossbow"},
-				"down": {"uv": [11, 2, 12, 3], "texture": "#crossbow"}
+				"north": {"uv": [6, 3, 14, 2], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [13, 2, 14, 3], "texture": "#crossbow"},
+				"south": {"uv": [6, 2, 14, 3], "texture": "#crossbow"},
+				"west": {"uv": [6, 2, 7, 3], "texture": "#crossbow"},
+				"up": {"uv": [14, 2, 6, 3], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [6, 2, 14, 3], "texture": "#crossbow"}
 			}
 		},
 		{
 			"name": "crossbow_standby_3",
-			"from": [13, 13, 7.5],
-			"to": [14, 15, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
+			"from": [5, 12, 7.5],
+			"to": [11, 13, 8.5],
 			"faces": {
-				"north": {"uv": [13, 3, 14, 1], "rotation": 180, "texture": "#crossbow"},
-				"east": {"uv": [13, 1, 14, 3], "texture": "#crossbow"},
-				"south": {"uv": [13, 1, 14, 3], "texture": "#crossbow"},
-				"west": {"uv": [13, 1, 14, 3], "texture": "#crossbow"},
-				"up": {"uv": [14, 1, 13, 2], "rotation": 180, "texture": "#crossbow"},
-				"down": {"uv": [13, 2, 14, 3], "texture": "#crossbow"}
+				"north": {"uv": [5, 4, 11, 3], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [10, 3, 11, 4], "texture": "#crossbow"},
+				"south": {"uv": [5, 3, 11, 4], "texture": "#crossbow"},
+				"west": {"uv": [5, 3, 6, 4], "texture": "#crossbow"},
+				"up": {"uv": [11, 3, 5, 4], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [5, 3, 11, 4], "texture": "#crossbow"}
 			}
 		},
 		{
 			"name": "crossbow_standby_4",
-			"from": [6, 6, 7.5],
-			"to": [7, 14, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
+			"from": [12, 12, 7.5],
+			"to": [13, 13, 8.5],
 			"faces": {
-				"north": {"uv": [6, 10, 7, 2], "rotation": 180, "texture": "#crossbow"},
-				"east": {"uv": [6, 2, 7, 10], "texture": "#crossbow"},
-				"south": {"uv": [6, 2, 7, 10], "texture": "#crossbow"},
-				"west": {"uv": [6, 2, 7, 10], "texture": "#crossbow"},
-				"up": {"uv": [7, 2, 6, 3], "rotation": 180, "texture": "#crossbow"},
-				"down": {"uv": [6, 9, 7, 10], "texture": "#crossbow"}
+				"north": {"uv": [12, 4, 13, 3], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [12, 3, 13, 4], "texture": "#crossbow"},
+				"south": {"uv": [12, 3, 13, 4], "texture": "#crossbow"},
+				"west": {"uv": [12, 3, 13, 4], "texture": "#crossbow"},
+				"up": {"uv": [13, 3, 12, 4], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [12, 3, 13, 4], "texture": "#crossbow"}
 			}
 		},
 		{
 			"name": "crossbow_standby_5",
-			"from": [5, 7, 7.5],
-			"to": [6, 13, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
+			"from": [4, 11, 7.5],
+			"to": [8, 12, 8.5],
 			"faces": {
-				"north": {"uv": [5, 9, 6, 3], "rotation": 180, "texture": "#crossbow"},
-				"east": {"uv": [5, 3, 6, 9], "texture": "#crossbow"},
-				"south": {"uv": [5, 3, 6, 9], "texture": "#crossbow"},
-				"west": {"uv": [5, 3, 6, 9], "texture": "#crossbow"},
-				"up": {"uv": [6, 3, 5, 4], "rotation": 180, "texture": "#crossbow"},
-				"down": {"uv": [5, 8, 6, 9], "texture": "#crossbow"}
+				"north": {"uv": [4, 5, 8, 4], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [7, 4, 8, 5], "texture": "#crossbow"},
+				"south": {"uv": [4, 4, 8, 5], "texture": "#crossbow"},
+				"west": {"uv": [4, 4, 5, 5], "texture": "#crossbow"},
+				"up": {"uv": [8, 4, 4, 5], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [4, 4, 8, 5], "texture": "#crossbow"}
 			}
 		},
 		{
 			"name": "crossbow_standby_6",
-			"from": [4, 8, 7.5],
-			"to": [5, 12, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
-			"faces": {
-				"north": {"uv": [4, 8, 5, 4], "rotation": 180, "texture": "#crossbow"},
-				"east": {"uv": [4, 4, 5, 8], "texture": "#crossbow"},
-				"south": {"uv": [4, 4, 5, 8], "texture": "#crossbow"},
-				"west": {"uv": [4, 4, 5, 8], "texture": "#crossbow"},
-				"up": {"uv": [5, 4, 4, 5], "rotation": 180, "texture": "#crossbow"},
-				"down": {"uv": [4, 7, 5, 8], "texture": "#crossbow"}
-			}
-		},
-		{
-			"name": "crossbow_standby_7",
-			"from": [7, 5, 7.5],
-			"to": [8, 12, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
-			"faces": {
-				"north": {"uv": [7, 11, 8, 4], "rotation": 180, "texture": "#crossbow"},
-				"east": {"uv": [7, 4, 8, 11], "texture": "#crossbow"},
-				"south": {"uv": [7, 4, 8, 11], "texture": "#crossbow"},
-				"west": {"uv": [7, 4, 8, 11], "texture": "#crossbow"},
-				"up": {"uv": [8, 4, 7, 5], "rotation": 180, "texture": "#crossbow"},
-				"down": {"uv": [7, 10, 8, 11], "texture": "#crossbow"}
-			}
-		},
-		{
-			"name": "crossbow_standby_8",
 			"from": [11, 11, 7.5],
 			"to": [12, 12, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
 			"faces": {
 				"north": {"uv": [11, 5, 12, 4], "rotation": 180, "texture": "#crossbow"},
 				"east": {"uv": [11, 4, 12, 5], "texture": "#crossbow"},
@@ -216,38 +141,22 @@
 			}
 		},
 		{
-			"name": "crossbow_standby_9",
-			"from": [3, 5, 7.5],
-			"to": [4, 11, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
-			"faces": {
-				"north": {"uv": [3, 11, 4, 5], "rotation": 180, "texture": "#crossbow"},
-				"east": {"uv": [3, 5, 4, 11], "texture": "#crossbow"},
-				"south": {"uv": [3, 5, 4, 11], "texture": "#crossbow"},
-				"west": {"uv": [3, 5, 4, 11], "texture": "#crossbow"},
-				"up": {"uv": [4, 5, 3, 6], "rotation": 180, "texture": "#crossbow"},
-				"down": {"uv": [3, 10, 4, 11], "texture": "#crossbow"}
-			}
-		},
-		{
-			"name": "crossbow_standby_10",
-			"from": [8, 4, 7.5],
+			"name": "crossbow_standby_7",
+			"from": [3, 10, 7.5],
 			"to": [9, 11, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
 			"faces": {
-				"north": {"uv": [8, 12, 9, 5], "rotation": 180, "texture": "#crossbow"},
-				"east": {"uv": [8, 5, 9, 12], "texture": "#crossbow"},
-				"south": {"uv": [8, 5, 9, 12], "texture": "#crossbow"},
-				"west": {"uv": [8, 5, 9, 12], "texture": "#crossbow"},
-				"up": {"uv": [9, 5, 8, 6], "rotation": 180, "texture": "#crossbow"},
-				"down": {"uv": [8, 11, 9, 12], "texture": "#crossbow"}
+				"north": {"uv": [3, 6, 9, 5], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [8, 5, 9, 6], "texture": "#crossbow"},
+				"south": {"uv": [3, 5, 9, 6], "texture": "#crossbow"},
+				"west": {"uv": [3, 5, 4, 6], "texture": "#crossbow"},
+				"up": {"uv": [9, 5, 3, 6], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [3, 5, 9, 6], "texture": "#crossbow"}
 			}
 		},
 		{
-			"name": "crossbow_standby_11",
+			"name": "crossbow_standby_8",
 			"from": [10, 10, 7.5],
 			"to": [11, 11, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
 			"faces": {
 				"north": {"uv": [10, 6, 11, 5], "rotation": 180, "texture": "#crossbow"},
 				"east": {"uv": [10, 5, 11, 6], "texture": "#crossbow"},
@@ -258,94 +167,100 @@
 			}
 		},
 		{
-			"name": "crossbow_standby_12",
-			"from": [2, 2, 7.5],
-			"to": [3, 10, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
+			"name": "crossbow_standby_9",
+			"from": [2, 9, 7.5],
+			"to": [10, 10, 8.5],
 			"faces": {
-				"north": {"uv": [2, 14, 3, 6], "rotation": 180, "texture": "#crossbow"},
-				"east": {"uv": [2, 6, 3, 14], "texture": "#crossbow"},
-				"south": {"uv": [2, 6, 3, 14], "texture": "#crossbow"},
-				"west": {"uv": [2, 6, 3, 14], "texture": "#crossbow"},
-				"up": {"uv": [3, 6, 2, 7], "rotation": 180, "texture": "#crossbow"},
-				"down": {"uv": [2, 13, 3, 14], "texture": "#crossbow"}
+				"north": {"uv": [2, 7, 10, 6], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [9, 6, 10, 7], "texture": "#crossbow"},
+				"south": {"uv": [2, 6, 10, 7], "texture": "#crossbow"},
+				"west": {"uv": [2, 6, 3, 7], "texture": "#crossbow"},
+				"up": {"uv": [10, 6, 2, 7], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [2, 6, 10, 7], "texture": "#crossbow"}
+			}
+		},
+		{
+			"name": "crossbow_standby_10",
+			"from": [1, 8, 7.5],
+			"to": [11, 9, 8.5],
+			"faces": {
+				"north": {"uv": [1, 8, 11, 7], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [10, 7, 11, 8], "texture": "#crossbow"},
+				"south": {"uv": [1, 7, 11, 8], "texture": "#crossbow"},
+				"west": {"uv": [1, 7, 2, 8], "texture": "#crossbow"},
+				"up": {"uv": [11, 7, 1, 8], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [1, 7, 11, 8], "texture": "#crossbow"}
+			}
+		},
+		{
+			"name": "crossbow_standby_11",
+			"from": [1, 7, 7.5],
+			"to": [4, 8, 8.5],
+			"faces": {
+				"north": {"uv": [1, 9, 4, 8], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [3, 8, 4, 9], "texture": "#crossbow"},
+				"south": {"uv": [1, 8, 4, 9], "texture": "#crossbow"},
+				"west": {"uv": [1, 8, 2, 9], "texture": "#crossbow"},
+				"up": {"uv": [4, 8, 1, 9], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [1, 8, 4, 9], "texture": "#crossbow"}
+			}
+		},
+		{
+			"name": "crossbow_standby_12",
+			"from": [5, 7, 7.5],
+			"to": [12, 8, 8.5],
+			"faces": {
+				"north": {"uv": [5, 9, 12, 8], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [11, 8, 12, 9], "texture": "#crossbow"},
+				"south": {"uv": [5, 8, 12, 9], "texture": "#crossbow"},
+				"west": {"uv": [5, 8, 6, 9], "texture": "#crossbow"},
+				"up": {"uv": [12, 8, 5, 9], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [5, 8, 12, 9], "texture": "#crossbow"}
 			}
 		},
 		{
 			"name": "crossbow_standby_13",
-			"from": [9, 3, 7.5],
-			"to": [10, 10, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
+			"from": [1, 6, 7.5],
+			"to": [4, 7, 8.5],
 			"faces": {
-				"north": {"uv": [9, 13, 10, 6], "rotation": 180, "texture": "#crossbow"},
-				"east": {"uv": [9, 6, 10, 13], "texture": "#crossbow"},
-				"south": {"uv": [9, 6, 10, 13], "texture": "#crossbow"},
-				"west": {"uv": [9, 6, 10, 13], "texture": "#crossbow"},
-				"up": {"uv": [10, 6, 9, 7], "rotation": 180, "texture": "#crossbow"},
-				"down": {"uv": [9, 12, 10, 13], "texture": "#crossbow"}
+				"north": {"uv": [1, 10, 4, 9], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [3, 9, 4, 10], "texture": "#crossbow"},
+				"south": {"uv": [1, 9, 4, 10], "texture": "#crossbow"},
+				"west": {"uv": [1, 9, 2, 10], "texture": "#crossbow"},
+				"up": {"uv": [4, 9, 1, 10], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [1, 9, 4, 10], "texture": "#crossbow"}
 			}
 		},
 		{
 			"name": "crossbow_standby_14",
-			"from": [1, 2, 7.5],
-			"to": [2, 9, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
+			"from": [6, 6, 7.5],
+			"to": [13, 7, 8.5],
 			"faces": {
-				"north": {"uv": [1, 14, 2, 7], "rotation": 180, "texture": "#crossbow"},
-				"east": {"uv": [1, 7, 2, 14], "texture": "#crossbow"},
-				"south": {"uv": [1, 7, 2, 14], "texture": "#crossbow"},
-				"west": {"uv": [1, 7, 2, 14], "texture": "#crossbow"},
-				"up": {"uv": [2, 7, 1, 8], "rotation": 180, "texture": "#crossbow"},
-				"down": {"uv": [1, 13, 2, 14], "texture": "#crossbow"}
+				"north": {"uv": [6, 10, 13, 9], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [12, 9, 13, 10], "texture": "#crossbow"},
+				"south": {"uv": [6, 9, 13, 10], "texture": "#crossbow"},
+				"west": {"uv": [6, 9, 7, 10], "texture": "#crossbow"},
+				"up": {"uv": [13, 9, 6, 10], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [6, 9, 13, 10], "texture": "#crossbow"}
 			}
 		},
 		{
 			"name": "crossbow_standby_15",
-			"from": [10, 3, 7.5],
-			"to": [11, 9, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
+			"from": [1, 5, 7.5],
+			"to": [4, 6, 8.5],
 			"faces": {
-				"north": {"uv": [10, 13, 11, 7], "rotation": 180, "texture": "#crossbow"},
-				"east": {"uv": [10, 7, 11, 13], "texture": "#crossbow"},
-				"south": {"uv": [10, 7, 11, 13], "texture": "#crossbow"},
-				"west": {"uv": [10, 7, 11, 13], "texture": "#crossbow"},
-				"up": {"uv": [11, 7, 10, 8], "rotation": 180, "texture": "#crossbow"},
-				"down": {"uv": [10, 12, 11, 13], "texture": "#crossbow"}
+				"north": {"uv": [1, 11, 4, 10], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [3, 10, 4, 11], "texture": "#crossbow"},
+				"south": {"uv": [1, 10, 4, 11], "texture": "#crossbow"},
+				"west": {"uv": [1, 10, 2, 11], "texture": "#crossbow"},
+				"up": {"uv": [4, 10, 1, 11], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [1, 10, 4, 11], "texture": "#crossbow"}
 			}
 		},
 		{
 			"name": "crossbow_standby_16",
-			"from": [11, 2, 7.5],
-			"to": [12, 8, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
-			"faces": {
-				"north": {"uv": [11, 14, 12, 8], "rotation": 180, "texture": "#crossbow"},
-				"east": {"uv": [11, 8, 12, 14], "texture": "#crossbow"},
-				"south": {"uv": [11, 8, 12, 14], "texture": "#crossbow"},
-				"west": {"uv": [11, 8, 12, 14], "texture": "#crossbow"},
-				"up": {"uv": [12, 8, 11, 9], "rotation": 180, "texture": "#crossbow"},
-				"down": {"uv": [11, 13, 12, 14], "texture": "#crossbow"}
-			}
-		},
-		{
-			"name": "crossbow_standby_17",
-			"from": [12, 1, 7.5],
-			"to": [13, 7, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
-			"faces": {
-				"north": {"uv": [12, 15, 13, 9], "rotation": 180, "texture": "#crossbow"},
-				"east": {"uv": [12, 9, 13, 15], "texture": "#crossbow"},
-				"south": {"uv": [12, 9, 13, 15], "texture": "#crossbow"},
-				"west": {"uv": [12, 9, 13, 15], "texture": "#crossbow"},
-				"up": {"uv": [13, 9, 12, 10], "rotation": 180, "texture": "#crossbow"},
-				"down": {"uv": [12, 14, 13, 15], "texture": "#crossbow"}
-			}
-		},
-		{
-			"name": "crossbow_standby_18",
 			"from": [5, 5, 7.5],
 			"to": [6, 6, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
 			"faces": {
 				"north": {"uv": [5, 11, 6, 10], "rotation": 180, "texture": "#crossbow"},
 				"east": {"uv": [5, 10, 6, 11], "texture": "#crossbow"},
@@ -356,10 +271,35 @@
 			}
 		},
 		{
+			"name": "crossbow_standby_17",
+			"from": [7, 5, 7.5],
+			"to": [13, 6, 8.5],
+			"faces": {
+				"north": {"uv": [7, 11, 13, 10], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [12, 10, 13, 11], "texture": "#crossbow"},
+				"south": {"uv": [7, 10, 13, 11], "texture": "#crossbow"},
+				"west": {"uv": [7, 10, 8, 11], "texture": "#crossbow"},
+				"up": {"uv": [13, 10, 7, 11], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [7, 10, 13, 11], "texture": "#crossbow"}
+			}
+		},
+		{
+			"name": "crossbow_standby_18",
+			"from": [1, 4, 7.5],
+			"to": [3, 5, 8.5],
+			"faces": {
+				"north": {"uv": [1, 12, 3, 11], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [2, 11, 3, 12], "texture": "#crossbow"},
+				"south": {"uv": [1, 11, 3, 12], "texture": "#crossbow"},
+				"west": {"uv": [1, 11, 2, 12], "texture": "#crossbow"},
+				"up": {"uv": [3, 11, 1, 12], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [1, 11, 3, 12], "texture": "#crossbow"}
+			}
+		},
+		{
 			"name": "crossbow_standby_19",
 			"from": [4, 4, 7.5],
 			"to": [5, 5, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
 			"faces": {
 				"north": {"uv": [4, 12, 5, 11], "rotation": 180, "texture": "#crossbow"},
 				"east": {"uv": [4, 11, 5, 12], "texture": "#crossbow"},
@@ -371,93 +311,99 @@
 		},
 		{
 			"name": "crossbow_standby_20",
-			"from": [13, 0, 7.5],
+			"from": [8, 4, 7.5],
 			"to": [14, 5, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
 			"faces": {
-				"north": {"uv": [13, 16, 14, 11], "rotation": 180, "texture": "#crossbow"},
-				"east": {"uv": [13, 11, 14, 16], "texture": "#crossbow"},
-				"south": {"uv": [13, 11, 14, 16], "texture": "#crossbow"},
-				"west": {"uv": [13, 11, 14, 16], "texture": "#crossbow"},
-				"up": {"uv": [14, 11, 13, 12], "rotation": 180, "texture": "#crossbow"},
-				"down": {"uv": [13, 15, 14, 16], "texture": "#crossbow"}
+				"north": {"uv": [8, 12, 14, 11], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [13, 11, 14, 12], "texture": "#crossbow"},
+				"south": {"uv": [8, 11, 14, 12], "texture": "#crossbow"},
+				"west": {"uv": [8, 11, 9, 12], "texture": "#crossbow"},
+				"up": {"uv": [14, 11, 8, 12], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [8, 11, 14, 12], "texture": "#crossbow"}
 			}
 		},
 		{
 			"name": "crossbow_standby_21",
 			"from": [0, 3, 7.5],
-			"to": [1, 4, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
+			"to": [4, 4, 8.5],
 			"faces": {
-				"north": {"uv": [0, 13, 1, 12], "rotation": 180, "texture": "#crossbow"},
-				"east": {"uv": [0, 12, 1, 13], "texture": "#crossbow"},
-				"south": {"uv": [0, 12, 1, 13], "texture": "#crossbow"},
+				"north": {"uv": [0, 13, 4, 12], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [3, 12, 4, 13], "texture": "#crossbow"},
+				"south": {"uv": [0, 12, 4, 13], "texture": "#crossbow"},
 				"west": {"uv": [0, 12, 1, 13], "texture": "#crossbow"},
-				"up": {"uv": [1, 12, 0, 13], "rotation": 180, "texture": "#crossbow"},
-				"down": {"uv": [0, 12, 1, 13], "texture": "#crossbow"}
+				"up": {"uv": [4, 12, 0, 13], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [0, 12, 4, 13], "texture": "#crossbow"}
 			}
 		},
 		{
 			"name": "crossbow_standby_22",
-			"from": [3, 3, 7.5],
-			"to": [4, 4, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
+			"from": [9, 3, 7.5],
+			"to": [15, 4, 8.5],
 			"faces": {
-				"north": {"uv": [3, 13, 4, 12], "rotation": 180, "texture": "#crossbow"},
-				"east": {"uv": [3, 12, 4, 13], "texture": "#crossbow"},
-				"south": {"uv": [3, 12, 4, 13], "texture": "#crossbow"},
-				"west": {"uv": [3, 12, 4, 13], "texture": "#crossbow"},
-				"up": {"uv": [4, 12, 3, 13], "rotation": 180, "texture": "#crossbow"},
-				"down": {"uv": [3, 12, 4, 13], "texture": "#crossbow"}
+				"north": {"uv": [9, 13, 15, 12], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [14, 12, 15, 13], "texture": "#crossbow"},
+				"south": {"uv": [9, 12, 15, 13], "texture": "#crossbow"},
+				"west": {"uv": [9, 12, 10, 13], "texture": "#crossbow"},
+				"up": {"uv": [15, 12, 9, 13], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [9, 12, 15, 13], "texture": "#crossbow"}
 			}
 		},
 		{
 			"name": "crossbow_standby_23",
-			"from": [14, 0, 7.5],
-			"to": [15, 4, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
+			"from": [1, 2, 7.5],
+			"to": [3, 3, 8.5],
 			"faces": {
-				"north": {"uv": [14, 16, 15, 12], "rotation": 180, "texture": "#crossbow"},
-				"east": {"uv": [14, 12, 15, 16], "texture": "#crossbow"},
-				"south": {"uv": [14, 12, 15, 16], "texture": "#crossbow"},
-				"west": {"uv": [14, 12, 15, 16], "texture": "#crossbow"},
-				"up": {"uv": [15, 12, 14, 13], "rotation": 180, "texture": "#crossbow"},
-				"down": {"uv": [14, 15, 15, 16], "texture": "#crossbow"}
+				"north": {"uv": [1, 14, 3, 13], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [2, 13, 3, 14], "texture": "#crossbow"},
+				"south": {"uv": [1, 13, 3, 14], "texture": "#crossbow"},
+				"west": {"uv": [1, 13, 2, 14], "texture": "#crossbow"},
+				"up": {"uv": [3, 13, 1, 14], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [1, 13, 3, 14], "texture": "#crossbow"}
 			}
 		},
 		{
 			"name": "crossbow_standby_24",
-			"from": [15, 1, 7.5],
+			"from": [11, 2, 7.5],
 			"to": [16, 3, 8.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 8]},
 			"faces": {
-				"north": {"uv": [15, 15, 16, 13], "rotation": 180, "texture": "#crossbow"},
-				"east": {"uv": [15, 13, 16, 15], "texture": "#crossbow"},
-				"south": {"uv": [15, 13, 16, 15], "texture": "#crossbow"},
-				"west": {"uv": [15, 13, 16, 15], "texture": "#crossbow"},
-				"up": {"uv": [16, 13, 15, 14], "rotation": 180, "texture": "#crossbow"},
-				"down": {"uv": [15, 14, 16, 15], "texture": "#crossbow"}
+				"north": {"uv": [11, 14, 16, 13], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [15, 13, 16, 14], "texture": "#crossbow"},
+				"south": {"uv": [11, 13, 16, 14], "texture": "#crossbow"},
+				"west": {"uv": [11, 13, 12, 14], "texture": "#crossbow"},
+				"up": {"uv": [16, 13, 11, 14], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [11, 13, 16, 14], "texture": "#crossbow"}
+			}
+		},
+		{
+			"name": "crossbow_standby_25",
+			"from": [12, 1, 7.5],
+			"to": [16, 2, 8.5],
+			"faces": {
+				"north": {"uv": [12, 15, 16, 14], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [15, 14, 16, 15], "texture": "#crossbow"},
+				"south": {"uv": [12, 14, 16, 15], "texture": "#crossbow"},
+				"west": {"uv": [12, 14, 13, 15], "texture": "#crossbow"},
+				"up": {"uv": [16, 14, 12, 15], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [12, 14, 16, 15], "texture": "#crossbow"}
+			}
+		},
+		{
+			"name": "crossbow_standby_26",
+			"from": [13, 0, 7.5],
+			"to": [15, 1, 8.5],
+			"faces": {
+				"north": {"uv": [13, 16, 15, 15], "rotation": 180, "texture": "#crossbow"},
+				"east": {"uv": [14, 15, 15, 16], "texture": "#crossbow"},
+				"south": {"uv": [13, 15, 15, 16], "texture": "#crossbow"},
+				"west": {"uv": [13, 15, 14, 16], "texture": "#crossbow"},
+				"up": {"uv": [15, 15, 13, 16], "rotation": 180, "texture": "#crossbow"},
+				"down": {"uv": [13, 15, 15, 16], "texture": "#crossbow"}
 			}
 		},
 		{
 			"name": "crossbow_base_0",
 			"from": [3, 13, 7],
-			"to": [5, 14, 7.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
-			"faces": {
-				"north": {"uv": [3, 3, 5, 2], "rotation": 180, "texture": "#base"},
-				"east": {"uv": [4, 2, 5, 3], "texture": "#base"},
-				"south": {"uv": [3, 2, 5, 3], "texture": "#base"},
-				"west": {"uv": [3, 2, 4, 3], "texture": "#base"},
-				"up": {"uv": [5, 2, 3, 3], "rotation": 180, "texture": "#base"},
-				"down": {"uv": [3, 2, 5, 3], "texture": "#base"}
-			}
-		},
-		{
-			"name": "crossbow_base_0",
-			"from": [3, 13, 7.5],
 			"to": [5, 14, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
 			"faces": {
 				"north": {"uv": [3, 3, 5, 2], "rotation": 180, "texture": "#base"},
 				"east": {"uv": [4, 2, 5, 3], "texture": "#base"},
@@ -469,228 +415,212 @@
 		},
 		{
 			"name": "crossbow_base_1",
-			"from": [2, 11, 7],
-			"to": [3, 13, 7.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
-			"faces": {
-				"north": {"uv": [2, 5, 3, 3], "rotation": 180, "texture": "#base"},
-				"east": {"uv": [2, 3, 3, 5], "texture": "#base"},
-				"south": {"uv": [2, 3, 3, 5], "texture": "#base"},
-				"west": {"uv": [2, 3, 3, 5], "texture": "#base"},
-				"up": {"uv": [3, 3, 2, 4], "rotation": 180, "texture": "#base"},
-				"down": {"uv": [2, 4, 3, 5], "texture": "#base"}
-			}
-		},
-		{
-			"name": "crossbow_base_1",
-			"from": [2, 11, 7.5],
+			"from": [2, 12, 7],
 			"to": [3, 13, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
 			"faces": {
-				"north": {"uv": [2, 5, 3, 3], "rotation": 180, "texture": "#base"},
-				"east": {"uv": [2, 3, 3, 5], "texture": "#base"},
-				"south": {"uv": [2, 3, 3, 5], "texture": "#base"},
-				"west": {"uv": [2, 3, 3, 5], "texture": "#base"},
+				"north": {"uv": [2, 4, 3, 3], "rotation": 180, "texture": "#base"},
+				"east": {"uv": [2, 3, 3, 4], "texture": "#base"},
+				"south": {"uv": [2, 3, 3, 4], "texture": "#base"},
+				"west": {"uv": [2, 3, 3, 4], "texture": "#base"},
 				"up": {"uv": [3, 3, 2, 4], "rotation": 180, "texture": "#base"},
-				"down": {"uv": [2, 4, 3, 5], "texture": "#base"}
+				"down": {"uv": [2, 3, 3, 4], "texture": "#base"}
 			}
 		},
 		{
 			"name": "crossbow_base_2",
-			"from": [5, 7, 7],
+			"from": [5, 12, 7],
 			"to": [7, 13, 7.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
 			"faces": {
-				"north": {"uv": [5, 9, 7, 3], "rotation": 180, "texture": "#base"},
-				"east": {"uv": [6, 3, 7, 9], "texture": "#base"},
-				"south": {"uv": [5, 3, 7, 9], "texture": "#base"},
-				"west": {"uv": [5, 3, 6, 9], "texture": "#base"},
+				"north": {"uv": [5, 4, 7, 3], "rotation": 180, "texture": "#base"},
+				"east": {"uv": [6, 3, 7, 4], "texture": "#base"},
+				"south": {"uv": [5, 3, 7, 4], "texture": "#base"},
+				"west": {"uv": [5, 3, 6, 4], "texture": "#base"},
 				"up": {"uv": [7, 3, 5, 4], "rotation": 180, "texture": "#base"},
-				"down": {"uv": [5, 8, 7, 9], "texture": "#base"}
+				"down": {"uv": [5, 3, 7, 4], "texture": "#base"}
 			}
 		},
 		{
 			"name": "crossbow_base_3",
-			"from": [7, 5, 7],
-			"to": [8, 12, 7.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
+			"from": [2, 11, 7],
+			"to": [3, 12, 8],
 			"faces": {
-				"north": {"uv": [7, 11, 8, 4], "rotation": 180, "texture": "#base"},
-				"east": {"uv": [7, 4, 8, 11], "texture": "#base"},
-				"south": {"uv": [7, 4, 8, 11], "texture": "#base"},
-				"west": {"uv": [7, 4, 8, 11], "texture": "#base"},
-				"up": {"uv": [8, 4, 7, 5], "rotation": 180, "texture": "#base"},
-				"down": {"uv": [7, 10, 8, 11], "texture": "#base"}
+				"north": {"uv": [2, 5, 3, 4], "rotation": 180, "texture": "#base"},
+				"east": {"uv": [2, 4, 3, 5], "texture": "#base"},
+				"south": {"uv": [2, 4, 3, 5], "texture": "#base"},
+				"west": {"uv": [2, 4, 3, 5], "texture": "#base"},
+				"up": {"uv": [3, 4, 2, 5], "rotation": 180, "texture": "#base"},
+				"down": {"uv": [2, 4, 3, 5], "texture": "#base"}
 			}
 		},
 		{
 			"name": "crossbow_base_4",
-			"from": [3, 9, 7],
-			"to": [5, 11, 7.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
+			"from": [5, 11, 7],
+			"to": [8, 12, 7.5],
 			"faces": {
-				"north": {"uv": [3, 7, 5, 5], "rotation": 180, "texture": "#base"},
-				"east": {"uv": [4, 5, 5, 7], "texture": "#base"},
-				"south": {"uv": [3, 5, 5, 7], "texture": "#base"},
-				"west": {"uv": [3, 5, 4, 7], "texture": "#base"},
-				"up": {"uv": [5, 5, 3, 6], "rotation": 180, "texture": "#base"},
-				"down": {"uv": [3, 6, 5, 7], "texture": "#base"}
+				"north": {"uv": [5, 5, 8, 4], "rotation": 180, "texture": "#base"},
+				"east": {"uv": [7, 4, 8, 5], "texture": "#base"},
+				"south": {"uv": [5, 4, 8, 5], "texture": "#base"},
+				"west": {"uv": [5, 4, 6, 5], "texture": "#base"},
+				"up": {"uv": [8, 4, 5, 5], "rotation": 180, "texture": "#base"},
+				"down": {"uv": [5, 4, 8, 5], "texture": "#base"}
 			}
 		},
 		{
 			"name": "crossbow_base_5",
-			"from": [8, 4, 7],
+			"from": [3, 10, 7],
 			"to": [9, 11, 7.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
 			"faces": {
-				"north": {"uv": [8, 12, 9, 5], "rotation": 180, "texture": "#base"},
-				"east": {"uv": [8, 5, 9, 12], "texture": "#base"},
-				"south": {"uv": [8, 5, 9, 12], "texture": "#base"},
-				"west": {"uv": [8, 5, 9, 12], "texture": "#base"},
-				"up": {"uv": [9, 5, 8, 6], "rotation": 180, "texture": "#base"},
-				"down": {"uv": [8, 11, 9, 12], "texture": "#base"}
+				"north": {"uv": [3, 6, 9, 5], "rotation": 180, "texture": "#base"},
+				"east": {"uv": [8, 5, 9, 6], "texture": "#base"},
+				"south": {"uv": [3, 5, 9, 6], "texture": "#base"},
+				"west": {"uv": [3, 5, 4, 6], "texture": "#base"},
+				"up": {"uv": [9, 5, 3, 6], "rotation": 180, "texture": "#base"},
+				"down": {"uv": [3, 5, 9, 6], "texture": "#base"}
 			}
 		},
 		{
 			"name": "crossbow_base_6",
-			"from": [9, 3, 7],
+			"from": [3, 9, 7],
 			"to": [10, 10, 7.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
 			"faces": {
-				"north": {"uv": [9, 13, 10, 6], "rotation": 180, "texture": "#base"},
-				"east": {"uv": [9, 6, 10, 13], "texture": "#base"},
-				"south": {"uv": [9, 6, 10, 13], "texture": "#base"},
-				"west": {"uv": [9, 6, 10, 13], "texture": "#base"},
-				"up": {"uv": [10, 6, 9, 7], "rotation": 180, "texture": "#base"},
-				"down": {"uv": [9, 12, 10, 13], "texture": "#base"}
+				"north": {"uv": [3, 7, 10, 6], "rotation": 180, "texture": "#base"},
+				"east": {"uv": [9, 6, 10, 7], "texture": "#base"},
+				"south": {"uv": [3, 6, 10, 7], "texture": "#base"},
+				"west": {"uv": [3, 6, 4, 7], "texture": "#base"},
+				"up": {"uv": [10, 6, 3, 7], "rotation": 180, "texture": "#base"},
+				"down": {"uv": [3, 6, 10, 7], "texture": "#base"}
 			}
 		},
 		{
 			"name": "crossbow_base_7",
 			"from": [4, 8, 7],
-			"to": [5, 9, 7.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
+			"to": [11, 9, 7.5],
 			"faces": {
-				"north": {"uv": [4, 8, 5, 7], "rotation": 180, "texture": "#base"},
-				"east": {"uv": [4, 7, 5, 8], "texture": "#base"},
-				"south": {"uv": [4, 7, 5, 8], "texture": "#base"},
+				"north": {"uv": [4, 8, 11, 7], "rotation": 180, "texture": "#base"},
+				"east": {"uv": [10, 7, 11, 8], "texture": "#base"},
+				"south": {"uv": [4, 7, 11, 8], "texture": "#base"},
 				"west": {"uv": [4, 7, 5, 8], "texture": "#base"},
-				"up": {"uv": [5, 7, 4, 8], "rotation": 180, "texture": "#base"},
-				"down": {"uv": [4, 7, 5, 8], "texture": "#base"}
+				"up": {"uv": [11, 7, 4, 8], "rotation": 180, "texture": "#base"},
+				"down": {"uv": [4, 7, 11, 8], "texture": "#base"}
 			}
 		},
 		{
 			"name": "crossbow_base_8",
-			"from": [10, 3, 7],
-			"to": [11, 9, 7.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
+			"from": [5, 7, 7],
+			"to": [12, 8, 7.5],
 			"faces": {
-				"north": {"uv": [10, 13, 11, 7], "rotation": 180, "texture": "#base"},
-				"east": {"uv": [10, 7, 11, 13], "texture": "#base"},
-				"south": {"uv": [10, 7, 11, 13], "texture": "#base"},
-				"west": {"uv": [10, 7, 11, 13], "texture": "#base"},
-				"up": {"uv": [11, 7, 10, 8], "rotation": 180, "texture": "#base"},
-				"down": {"uv": [10, 12, 11, 13], "texture": "#base"}
+				"north": {"uv": [5, 9, 12, 8], "rotation": 180, "texture": "#base"},
+				"east": {"uv": [11, 8, 12, 9], "texture": "#base"},
+				"south": {"uv": [5, 8, 12, 9], "texture": "#base"},
+				"west": {"uv": [5, 8, 6, 9], "texture": "#base"},
+				"up": {"uv": [12, 8, 5, 9], "rotation": 180, "texture": "#base"},
+				"down": {"uv": [5, 8, 12, 9], "texture": "#base"}
 			}
 		},
 		{
 			"name": "crossbow_base_9",
-			"from": [11, 2, 7],
-			"to": [12, 8, 7.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
+			"from": [6, 6, 7],
+			"to": [13, 7, 7.5],
 			"faces": {
-				"north": {"uv": [11, 14, 12, 8], "rotation": 180, "texture": "#base"},
-				"east": {"uv": [11, 8, 12, 14], "texture": "#base"},
-				"south": {"uv": [11, 8, 12, 14], "texture": "#base"},
-				"west": {"uv": [11, 8, 12, 14], "texture": "#base"},
-				"up": {"uv": [12, 8, 11, 9], "rotation": 180, "texture": "#base"},
-				"down": {"uv": [11, 13, 12, 14], "texture": "#base"}
+				"north": {"uv": [6, 10, 13, 9], "rotation": 180, "texture": "#base"},
+				"east": {"uv": [12, 9, 13, 10], "texture": "#base"},
+				"south": {"uv": [6, 9, 13, 10], "texture": "#base"},
+				"west": {"uv": [6, 9, 7, 10], "texture": "#base"},
+				"up": {"uv": [13, 9, 6, 10], "rotation": 180, "texture": "#base"},
+				"down": {"uv": [6, 9, 13, 10], "texture": "#base"}
 			}
 		},
 		{
 			"name": "crossbow_base_10",
-			"from": [6, 6, 7],
-			"to": [7, 7, 7.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
+			"from": [7, 5, 7],
+			"to": [13, 6, 7.5],
 			"faces": {
-				"north": {"uv": [6, 10, 7, 9], "rotation": 180, "texture": "#base"},
-				"east": {"uv": [6, 9, 7, 10], "texture": "#base"},
-				"south": {"uv": [6, 9, 7, 10], "texture": "#base"},
-				"west": {"uv": [6, 9, 7, 10], "texture": "#base"},
-				"up": {"uv": [7, 9, 6, 10], "rotation": 180, "texture": "#base"},
-				"down": {"uv": [6, 9, 7, 10], "texture": "#base"}
+				"north": {"uv": [7, 11, 13, 10], "rotation": 180, "texture": "#base"},
+				"east": {"uv": [12, 10, 13, 11], "texture": "#base"},
+				"south": {"uv": [7, 10, 13, 11], "texture": "#base"},
+				"west": {"uv": [7, 10, 8, 11], "texture": "#base"},
+				"up": {"uv": [13, 10, 7, 11], "rotation": 180, "texture": "#base"},
+				"down": {"uv": [7, 10, 13, 11], "texture": "#base"}
 			}
 		},
 		{
 			"name": "crossbow_base_11",
-			"from": [12, 1, 7],
-			"to": [13, 7, 7.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
+			"from": [8, 4, 7],
+			"to": [14, 5, 7.5],
 			"faces": {
-				"north": {"uv": [12, 15, 13, 9], "rotation": 180, "texture": "#base"},
-				"east": {"uv": [12, 9, 13, 15], "texture": "#base"},
-				"south": {"uv": [12, 9, 13, 15], "texture": "#base"},
-				"west": {"uv": [12, 9, 13, 15], "texture": "#base"},
-				"up": {"uv": [13, 9, 12, 10], "rotation": 180, "texture": "#base"},
-				"down": {"uv": [12, 14, 13, 15], "texture": "#base"}
+				"north": {"uv": [8, 12, 14, 11], "rotation": 180, "texture": "#base"},
+				"east": {"uv": [13, 11, 14, 12], "texture": "#base"},
+				"south": {"uv": [8, 11, 14, 12], "texture": "#base"},
+				"west": {"uv": [8, 11, 9, 12], "texture": "#base"},
+				"up": {"uv": [14, 11, 8, 12], "rotation": 180, "texture": "#base"},
+				"down": {"uv": [8, 11, 14, 12], "texture": "#base"}
 			}
 		},
 		{
 			"name": "crossbow_base_12",
-			"from": [13, 0, 7],
-			"to": [14, 5, 7.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
+			"from": [9, 3, 7],
+			"to": [15, 4, 7.5],
 			"faces": {
-				"north": {"uv": [13, 16, 14, 11], "rotation": 180, "texture": "#base"},
-				"east": {"uv": [13, 11, 14, 16], "texture": "#base"},
-				"south": {"uv": [13, 11, 14, 16], "texture": "#base"},
-				"west": {"uv": [13, 11, 14, 16], "texture": "#base"},
-				"up": {"uv": [14, 11, 13, 12], "rotation": 180, "texture": "#base"},
-				"down": {"uv": [13, 15, 14, 16], "texture": "#base"}
+				"north": {"uv": [9, 13, 15, 12], "rotation": 180, "texture": "#base"},
+				"east": {"uv": [14, 12, 15, 13], "texture": "#base"},
+				"south": {"uv": [9, 12, 15, 13], "texture": "#base"},
+				"west": {"uv": [9, 12, 10, 13], "texture": "#base"},
+				"up": {"uv": [15, 12, 9, 13], "rotation": 180, "texture": "#base"},
+				"down": {"uv": [9, 12, 15, 13], "texture": "#base"}
 			}
 		},
 		{
 			"name": "crossbow_base_13",
-			"from": [14, 0, 7],
-			"to": [15, 4, 7.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
+			"from": [11, 2, 7],
+			"to": [16, 3, 7.5],
 			"faces": {
-				"north": {"uv": [14, 16, 15, 12], "rotation": 180, "texture": "#base"},
-				"east": {"uv": [14, 12, 15, 16], "texture": "#base"},
-				"south": {"uv": [14, 12, 15, 16], "texture": "#base"},
-				"west": {"uv": [14, 12, 15, 16], "texture": "#base"},
-				"up": {"uv": [15, 12, 14, 13], "rotation": 180, "texture": "#base"},
-				"down": {"uv": [14, 15, 15, 16], "texture": "#base"}
+				"north": {"uv": [11, 14, 16, 13], "rotation": 180, "texture": "#base"},
+				"east": {"uv": [15, 13, 16, 14], "texture": "#base"},
+				"south": {"uv": [11, 13, 16, 14], "texture": "#base"},
+				"west": {"uv": [11, 13, 12, 14], "texture": "#base"},
+				"up": {"uv": [16, 13, 11, 14], "rotation": 180, "texture": "#base"},
+				"down": {"uv": [11, 13, 16, 14], "texture": "#base"}
 			}
 		},
 		{
 			"name": "crossbow_base_14",
-			"from": [15, 1, 7],
-			"to": [16, 3, 7.5],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
+			"from": [12, 1, 7],
+			"to": [16, 2, 7.5],
 			"faces": {
-				"north": {"uv": [15, 15, 16, 13], "rotation": 180, "texture": "#base"},
-				"east": {"uv": [15, 13, 16, 15], "texture": "#base"},
-				"south": {"uv": [15, 13, 16, 15], "texture": "#base"},
-				"west": {"uv": [15, 13, 16, 15], "texture": "#base"},
-				"up": {"uv": [16, 13, 15, 14], "rotation": 180, "texture": "#base"},
-				"down": {"uv": [15, 14, 16, 15], "texture": "#base"}
+				"north": {"uv": [12, 15, 16, 14], "rotation": 180, "texture": "#base"},
+				"east": {"uv": [15, 14, 16, 15], "texture": "#base"},
+				"south": {"uv": [12, 14, 16, 15], "texture": "#base"},
+				"west": {"uv": [12, 14, 13, 15], "texture": "#base"},
+				"up": {"uv": [16, 14, 12, 15], "rotation": 180, "texture": "#base"},
+				"down": {"uv": [12, 14, 16, 15], "texture": "#base"}
+			}
+		},
+		{
+			"name": "crossbow_base_15",
+			"from": [13, 0, 7],
+			"to": [15, 1, 7.5],
+			"faces": {
+				"north": {"uv": [13, 16, 15, 15], "rotation": 180, "texture": "#base"},
+				"east": {"uv": [14, 15, 15, 16], "texture": "#base"},
+				"south": {"uv": [13, 15, 15, 16], "texture": "#base"},
+				"west": {"uv": [13, 15, 14, 16], "texture": "#base"},
+				"up": {"uv": [15, 15, 13, 16], "rotation": 180, "texture": "#base"},
+				"down": {"uv": [13, 15, 15, 16], "texture": "#base"}
 			}
 		}
 	],
-
 	"groups": [
 		{
 			"name": "crossbow_standby",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
 		},
 		{
 			"name": "crossbow_base",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"children": [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41]
+			"children": [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42]
 		}
 	]
 }
