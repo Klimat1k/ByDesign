@@ -1,6 +1,5 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "item/display/bow",
 	"textures": {
 		"particle": "bydesign:item/bow_pulling_1",
 		"bow": "bydesign:item/bow_pulling_1",
@@ -490,7 +489,10 @@
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"gui": {
-			"rotation": [-30, -15, 15]
+			"rotation": [-15, -5, 15]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0]
 		}
 	},
 	"groups": [
