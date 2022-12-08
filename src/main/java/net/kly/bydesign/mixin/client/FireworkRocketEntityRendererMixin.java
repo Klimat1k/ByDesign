@@ -13,7 +13,7 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.projectile.FireworkRocketEntity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.math.Vec3f;
+import net.minecraft.util.math.RotationAxis;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
@@ -29,17 +29,17 @@ public class FireworkRocketEntityRendererMixin extends EntityRenderer<FireworkRo
 
     /**
      * @author Kly
-     * @reason Changed how fireworks render
+     * @reason Changed rendering
      */
     @Overwrite
     public void render(FireworkRocketEntity entity, float yaw, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumerProvider, int light) {
         matrices.push();
 
         if (entity.wasShotAtAngle()) {
-            matrices.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(MathHelper.lerp(tickDelta, entity.prevYaw, entity.getYaw()) - 90.0F));
-            matrices.multiply(Vec3f.POSITIVE_Z.getDegreesQuaternion(MathHelper.lerp(tickDelta, entity.prevPitch, entity.getPitch()) + 90.0F));
+            matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(MathHelper.lerp(tickDelta, entity.prevYaw, entity.getYaw()) - 90.0F));
+            matrices.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(MathHelper.lerp(tickDelta, entity.prevPitch, entity.getPitch()) + 90.0F));
         } else {
-            matrices.multiply(Vec3f.POSITIVE_Z.getDegreesQuaternion(180.0F));
+            matrices.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(180.0F));
         }
 
         matrices.translate(0.0, -1.5, 0.0);

@@ -13,7 +13,7 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.math.Vec3f;
+import net.minecraft.util.math.RotationAxis;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
@@ -31,13 +31,13 @@ public class ArrowEntityRendererMixin extends ProjectileEntityRenderer<ArrowEnti
     public void render(ArrowEntity entity, float yaw, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumerProvider, int light) {
         matrices.push();
 
-        matrices.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(MathHelper.lerp(tickDelta, entity.prevYaw, entity.getYaw()) - 90.0F));
-        matrices.multiply(Vec3f.POSITIVE_Z.getDegreesQuaternion(MathHelper.lerp(tickDelta, entity.prevPitch, entity.getPitch()) + 90.0F));
+        matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(MathHelper.lerp(tickDelta, entity.prevYaw, entity.getYaw()) - 90.0F));
+        matrices.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(MathHelper.lerp(tickDelta, entity.prevPitch, entity.getPitch()) + 90.0F));
 
-        float s = entity.shake - tickDelta;
-        if (s > 0.0F) {
-            float t = -MathHelper.sin(s * 3.0F) * s;
-            matrices.multiply(Vec3f.POSITIVE_Z.getDegreesQuaternion(t));
+        float shake = entity.shake - tickDelta;
+        if (shake > 0.0F) {
+            float t = -MathHelper.sin(shake * 3.0F) * shake;
+            matrices.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(t));
         }
 
         matrices.translate(0.0, -0.75, 0.0);
